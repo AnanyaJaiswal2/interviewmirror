@@ -80,12 +80,6 @@ Unlike traditional tools, it doesn't just assess your answers — it analyzes **
 
 ---
 
-## 🖥️ Screenshots
-
-*Add screenshots here (Landing Page, Interview Screen, Dashboard, Feedback UI)*
-
----
-
 ## 🚀 Getting Started
 
 ### 1. Clone the repository
