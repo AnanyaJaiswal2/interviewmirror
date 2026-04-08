@@ -1,0 +1,9 @@
+# Environment variables — NEVER commit these
+.env
+
+# Dependencies — reinstallable with npm install
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
