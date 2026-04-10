@@ -8,18 +8,15 @@ const app = express()
 // CORS — allows any localhost in dev, specific URL in production
 app.use(cors({
   origin: function(origin, callback) {
-    // Allow requests with no origin (mobile apps, Postman)
     if (!origin) return callback(null, true)
 
-    // Allow all localhost ports in development
     if (origin.startsWith('http://localhost')) {
       return callback(null, true)
     }
 
-    // Allow your Vercel deployment URL
     const allowedOrigins = [
-      process.env.FRONTEND_URL,     // set this in Railway env vars
-      'https://interviewmirror.vercel.app'  // update with your actual URL
+      'https://interviewmirror.vercel.app/',  // ← your actual Vercel URL
+      process.env.FRONTEND_URL
     ].filter(Boolean)
 
     if (allowedOrigins.includes(origin)) {
